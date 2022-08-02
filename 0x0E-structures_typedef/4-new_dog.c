@@ -26,7 +26,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	nameLen = _strLen(name);
 	n_dog->name = malloc(sizeof(char) * nameLen + 1);
 
-	if (n_dog->name ==NULL)
+	if (n_dog->name == NULL)
 	{
 		free(n_dog);
 		return (NULL);
@@ -59,8 +59,10 @@ dog_t *new_dog(char *name, float age, char *owner)
 int _strLen(char *str)
 {
 	int i = 0;
+
 	while (str[i])
 		i++;
+
 	return (i);
 }
 
@@ -74,7 +76,9 @@ int _strLen(char *str)
 void fillMen(char *str, int strLen, char *dest)
 {
 	int i;
+
 	for (i = 0; i < strLen; i++)
 		dest[i] = str[i];
+
 	dest[i] = '\0';
 }
