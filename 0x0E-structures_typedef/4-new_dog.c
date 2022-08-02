@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <stdlib.h>
 #include "dog.h"
 
 int _strLen(char *str);
@@ -65,13 +65,13 @@ int _strLen(char *str)
 }
 
 /**
- * filleMen - copy string
+ * fillMen - copy string
  *
  * @str: String literal
  * @strLen: length string
  * @dest: the allocated memory
  */
-void filleMen(char *str, int strLen, char *dest)
+void fillMen(char *str, int strLen, char *dest)
 {
 	int i;
 	for (i = 0; i < strLen; i++)
